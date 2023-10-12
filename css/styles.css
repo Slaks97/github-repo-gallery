@@ -8,13 +8,13 @@ body {
     justify-content: center;
     margin: 0;
     font-family: "Open Sans", sans-serif;
-    background-color: #fbf9de;
+    background-color: #4f4f4f;
     color: #333;
     font-size: 16px;
 }
 
 .hide {
-    /* '!important' is to make sure that when we add the class using JS, it takes precendence */
+    /* '!important' is to make sure that when we add the class using JS, it takes precedence */
     display: none !important;
 }
 
@@ -129,7 +129,6 @@ ul {
     align-items: center;
     width: 100%;
     padding-left: 5%;
-    line-height: 1.7;
 }
 
 .user-info div p {
@@ -138,6 +137,7 @@ ul {
     padding: 0;
     border-bottom: 1px solid #9b8dc9;
     padding: 19px 0;
+    line-height: 1.6;
 }
 
 .filter-repos {
@@ -145,7 +145,9 @@ ul {
     margin-top: 1em;
     padding: 1em;
     margin-bottom: 1em;
-    border: 2px solid #483978;
+    border: 3px solid #483978;
+    border-radius: 5px;
+    font-style: italic;
 }
 
 section.repo-data {
@@ -158,7 +160,7 @@ section.repo-data {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #fff;
+    background-color: #ffffffdc;
     margin-top: 0;
     padding: 2em;
 }
@@ -175,7 +177,9 @@ section.repo-data {
     width: 90%;
     margin: 1em 0;
     border: 1px solid #f86d58;
+    border-radius: 5px;
     padding: 0.5em;
+    background-color: #fff;
 }
 
 .repo-list h3 {
@@ -212,6 +216,7 @@ section.repo-data {
     display: block;
     background-color: #483978;
     border: 1px solid #483978;
+    border-radius: 5px;
 }
 
 .repo-data .visit:hover {
@@ -229,6 +234,11 @@ section.repo-data {
 .view-repos {
     max-width: 200px;
     margin-top: 0;
+    border-radius: 5px;
+}
+
+.view-repos:hover {
+    background-color: gray;
 }
 
 @media (min-width: 700px) {
